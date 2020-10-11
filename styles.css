@@ -1,9 +1,9 @@
 body{
-    height: 60vh;
+    /* height: 60vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
     font-family: sans-serif;
 
 }
@@ -12,11 +12,11 @@ h1{
     display: flex;
 
 }
-
+/* input box animation styles */
 .form{
     width: 50%;
     position: relative;
-    height: 50px;
+    height: 69px;
     /* background: blue; */
     overflow: hidden;
 }
@@ -24,7 +24,8 @@ h1{
 .form input{
     width:100%;
     height: 100%;
-    color: darkturquoise;
+    background: rgba(0, 206, 209, 0);
+    border-radius: 20px;
     padding-top: 20px;
     border: none;
     outline: none;
@@ -72,26 +73,47 @@ h1{
 }
 
 /* The hero image */
+.hero{
+    height: 60vh;
+    position: relative;
+    display: flex;
+    /* added the values from "body before, flex-direction: justify-content: and alighn;; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .hero-image {
+    position: absolute;
+    top: 0;
+    left:0;
+    /* bottom:0; */
+    /* right:0; */
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://tippi-fifestarr.github.io/DaDeuce/images/xanthe2020.jpg");
-    
+    /* background-image: url("images/xanthe2020.jpg"); */
     /* Set a specific height */
-    height: 50%;
-  
+    /* height: 50%; */
+
     /* Position and center the image to scale nicely on all screens */
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-  }
-  
+    position: relative; */
+}
+.hero-image img{
+    width: 100%;
+    /* height: 100%; */
+
+}
+
+
   /* Place text in the middle of the image */
-  .hero-text {
+.hero-text {
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* if you lose it, its like layers in ps */
+    z-index: 1;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     /* color: white; */
-  }
+}
