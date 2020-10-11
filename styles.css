@@ -50,19 +50,21 @@ h1{
     width: 100%;
     border-bottom: 3px solid lightblue;
     transform: translateX(-100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.69s ease-in-out;
 }
 
 .content-name {
     position: absolute;
     bottom: 5px;
     left: 0px;
-    transition: all 0.3s ease;
+    transition: all 1.0s ease-out;
 }
 
 .form input:focus + .label-name .content-name, 
 .form input:valid + .label-name .content-name{
-    transform: translateY(-150%);
+    transform: translate(-69px, -33px);
+    /* transform: translateX(-150px); */
+    /* transform: translateZ(); */
     font-size: 14px;
     color: lightblue;
 }
