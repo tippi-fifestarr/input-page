@@ -64,6 +64,7 @@ function winText(x) {
     if (timer <= 68){
         clearInterval(x)
         hudTimer.innerHTML = `you red in ${timer} seconds, very nice`
+        document.getElementById(winText)
 
     }
     if (timer >= 69){
