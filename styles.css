@@ -90,7 +90,7 @@ p {
     /* transform: translateX(-150px); */
     /* transform: translateZ(); */
     font-size: 14px;
-    color: lightblue;
+    color: rgba(0, 191, 255, 0.699);
 }
 
 .form input:focus + .label-name::after, 
@@ -164,8 +164,8 @@ p {
   .hud-timer-box{
     color: white;
     height: 50%;
-    width: 50%;
-    font-size: 10vw;
+    width: 69%;
+    font-size: 3vw;
     justify-content: center;
     align-content:center;
   }

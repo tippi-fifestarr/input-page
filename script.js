@@ -1,5 +1,5 @@
 // use random math to change the quality of red each time
-const colorsArr = ['red', 'blue', 'green', 'orange', 'purple', 'black', 'white']
+const colorsArr = ['red', 'blue', 'brown', 'yellow', 'green', 'orange', 'purple', 'lightblue', 'black', 'white']
 const button = document.getElementById("button")
 console.log(button)
 
@@ -16,7 +16,6 @@ let x;
 // function for colorchange
 window.onclick = myFunction;
 // https://www.w3schools.com/jsref/event_onclick.asp
-// If the user clicks in the window, set the background color of <body> to yellow
 function myFunction() {
     const randomNum = Math.floor(Math.random() * Math.floor(colorsArr.length))
     document.getElementsByTagName("BODY")[0].style.background = colorsArr[randomNum]
@@ -29,6 +28,7 @@ function myFunction() {
         // or open a you win screen (timer, and link to dadeuce)
       }
     }
+    // do we need an else here to set the button.onclick to nothing (or a loseText()?)
 }
 
 
@@ -63,13 +63,13 @@ function winText(x) {
     }
     if (timer <= 68){
         clearInterval(x)
-        hudTimer.innerHTML = `you won in ${timer} seconds, very nice`
+        hudTimer.innerHTML = `you red in ${timer} seconds, very nice`
 
     }
     if (timer >= 69){
         hudTimer.innerHTML = `you won in more than 69 seconds, try again!` 
         clearInterval(x) 
-    }s
+    }
 }
 
 
