@@ -1,6 +1,7 @@
 // use random math to change the quality of red each time
 const colorsArr = ['red', 'blue', 'brown', 'yellow', 'green', 'orange', 'purple', 'lightblue', 'black', 'white']
 const button = document.getElementById("button")
+const buttonH = document.getElementsByClassName("change")
 console.log(button)
 
 // necessary variables for the HUD Popup
@@ -28,6 +29,7 @@ function myFunction() {
         // or open a you win screen (timer, and link to dadeuce)
       }
     }
+    
     // do we need an else here to set the button.onclick to nothing (or a loseText()?)
 }
 
